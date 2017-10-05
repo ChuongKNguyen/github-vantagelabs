@@ -1,0 +1,2 @@
+cd /cygdrive/c/development/nucleus/iseek-nucleus
+mvn package -Dmaven.test.skip=true spring-boot:run
