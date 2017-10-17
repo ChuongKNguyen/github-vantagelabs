@@ -142,4 +142,9 @@ footer {
     color: #F79420 !important;
     height: 4.5rem !important; }
 
+.btn-primary {
+  color: #fff;
+  background-color: #F79420;
+  border-color: #F79420; }
+
 /*# sourceMappingURL=main.css.map */
