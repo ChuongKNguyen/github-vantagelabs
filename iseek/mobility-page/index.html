@@ -20,8 +20,10 @@
 
   </head>
 
-  <body>
-
+  <body data-spy="scroll" data-target="#navbar">
+    <div id="canvascon">
+      
+    </div>
     <div class="collapse bg-inverse" id="navbarHeader">
       <div class="container">
         <div class="row">
@@ -48,7 +50,7 @@
       </a>
       </div>
     </div>
-    <div class="navbar navbar-inverse bg-grey">
+    <div class="navbar navbar-inverse bg-grey" id="navbar">
       <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand">
           <img src="iseek-logo.png" class="brand">
@@ -56,6 +58,12 @@
         <a href="#" class="navbar-brand">
           <img src="canvas-logo.png" class="brand pull-right">
         </a>
+        <ul class="nav hidden">
+          <li>
+            <a href="#canvascon"></a>
+          </li>
+        
+        </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars" aria-hidden="true" style="font-size: 30px !important; padding: 0.75rem 1rem;"></i>
         </button>
@@ -139,28 +147,28 @@
 
         <div class="container-fluid">
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade in active" id="description">
+            <div role="tabpanel" class="tab-pane fade-in active" id="description">
               <!-- <div class="alert alert-info">Home</div> -->
               <div class="col-sm-12" style="display: inline-flex;">
                 <div class="col-sm-8">
                   <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
 
                   <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                  <h4> Content here, content here </h4>
+                  <h3>  <i class="iconbullet fa fa-wifi" aria-hidden="true"></i> Content here, content here </h3>
                   <ul>
                     <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</li>
                     <li>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</li>
                     <li>Contrary to popular belief</li>
                   </ul>
 
-                  <h4> Where can I get some? </h4>
+                  <h3> <i class="iconbullet fa fa-phone" aria-hidden="true"></i> Where can I get some? </h3>
                   <ul>
                     <li>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</li>
                     <li>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</li>
                     <li>Contrary to popular belief</li>
                   </ul>
 
-                  <h4> Where does it come from? </h4>
+                  <h3> <i class="iconbullet fa fa-line-chart" aria-hidden="true"></i> Where does it come from? </h3>
                   <ul>
                     <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
                     <li>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable</li>
@@ -169,17 +177,16 @@
                   
                 </div>
                 <div class="col-sm-4">
-                  <input type="text" placeholder="&#xF002; Search by keywords ..." style="font-family: Arial, FontAwesome;left: 0;right: 0;margin: auto; background-color: #F9F9FB; margin-bottom: 3rem;" class="form-control" name="search" placeholder="Search by keywords ..." ng-show="showSearch" ng-change = "updateSearch()" ng-model="searchString.value" ng-model-options="{ debounce: 350 }" focus-on-show>
+                  <input type="text" placeholder="&#xF002; Search by keywords ..." style="font-family: Arial, FontAwesome;left: 0;right: 0;margin: auto;  margin-bottom: 3rem;" class="form-control" name="search" placeholder="Search by keywords ..." ng-show="showSearch" ng-change = "updateSearch()" ng-model="searchString.value" ng-model-options="{ debounce: 350 }" focus-on-show>
                   <h4>Contact Us</h4><br>
-                  <form>
+                  <script type="text/javascript" src="https://vantage.formstack.com/forms/js.php/iseek_canvas?no_style=1"></script><noscript><a href="https://vantage.formstack.com/forms/iseek_canvas" title="Online Form">Online Form - iseek/canvas</a></noscript><div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com?utm_source=jsembed&utm_medium=product&utm_campaign=product+branding..." title="HTML Form Builder">HTML Form Builder</a></div>
+<!--                   <script type="text/javascript" src="https://vantage.formstack.com/forms/js.php/iseek_canvas"></script>
+ -->                  
+  <!--                 <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Example textarea</label>
@@ -192,7 +199,7 @@
                     </label>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                </form> -->
                 </div>
               </div>
             </div>
