@@ -187,6 +187,10 @@ footer {
     border-color: $color-highlight1;
 }
 
+h3 {
+  transform: translatex(4rem);
+}
+
 h4, h3{
   border-bottom: 1px solid $light-grey;
   margin-bottom: 1rem !important;
@@ -199,22 +203,23 @@ h4, h3{
     border-bottom: 1px solid red;
     padding-bottom: 1rem;
     transform: translateY(1px);
-    margin-left: 4rem;
+/*     margin-left: 4rem; */
   }
 }
 
 .iconbullet {
   padding: 0.5rem;
-    border: 1px solid $color-highlight1;
-    border-radius: 5px;
-    color: white;
-    background-color: $color-highlight1;
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    transform: translateY(0.5rem);
-    margin-bottom: -0.5rem;
-    margin-right: 0.5rem;
+  border: 1px solid $color-highlight1;
+  border-radius: 5px;
+  color: white;
+  background-color: $color-highlight1;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  transform: translateY(2.5rem);
+  margin-bottom: -0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.75rem;
 }
 
 //FormStack Styles!!!!
