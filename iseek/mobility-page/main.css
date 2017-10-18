@@ -82,8 +82,8 @@ footer p {
 
 .bg-grey {
   /* background-color: #f7f7f7 !important;  */
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url(background.png) no-repeat fixed;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(background.png) no-repeat fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url(./assets/img/background.png) no-repeat fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(./assets/img/background.png) no-repeat fixed;
   background-size: cover; }
 
 .bg-white {
@@ -101,8 +101,8 @@ footer p {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   margin-bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.45)), to(rgba(22, 22, 22, 0))), url(library.png) no-repeat fixed;
-  background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0)), url(library.png) no-repeat fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.45)), to(rgba(22, 22, 22, 0))), url(./assets/img/library.png) no-repeat fixed;
+  background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0)), url(./assets/img/library.png) no-repeat fixed;
   background-size: cover; }
 
 .jumbotron-heading {
