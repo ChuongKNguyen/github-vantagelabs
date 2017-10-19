@@ -4,7 +4,7 @@ $light-grey: #E7E7E7 ;
 $color-highlight1: #F79420; 
 $color-highlight2: #3c763d; 
 /* dimension */
-$socialbar-height: 60px; 
+$socialbar-height: 50px; 
 $navbar-height: 80px;
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -88,11 +88,18 @@ footer p {
 .social-bar{
   height: $socialbar-height;
   background-color: $dark-grey !important;
-  line-height: 55px;
+  line-height: 45px;
 }
 .social-media {
   color:  $light-grey;
 }
+
+.sticky {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+    z-index: 10;
+}   
 
 .navbar {
   height: $navbar-height; 
@@ -111,6 +118,8 @@ footer p {
 }
 
 .bg-poligon {
+  background:linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75) ), url(./assets/img/background.png) no-repeat fixed ; 
+  background-size: cover;
   &:before {
     content: '';
     position: absolute;
@@ -118,9 +127,9 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
-    -webkit-clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%);
-    clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%);
+    background: rgba(0,0,0,0.85);
+    -webkit-clip-path: polygon(0 0, 60% 0%, 50% 100%, 0% 100%);
+    clip-path: polygon(0 0, 60% 0%, 50% 100%, 0% 100%);
   }
   &:after {
     content: '';
@@ -130,8 +139,8 @@ footer p {
     width: 100%;
     height: 100%;
     background: rgba(22,38,22,0.43);
-    -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
-    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
+    -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 50% 100%);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 50% 100%);
   }
 }
 
@@ -151,7 +160,7 @@ footer p {
 }
 
 .banner { 
-  height: 22rem;
+  height: 18rem;
   margin-bottom: 0;
   background: linear-gradient(rgba(22,22,22,0.45), rgba(22,22,22,0) ), url(./assets/img/library.png) no-repeat fixed ; 
   background-size: cover;
@@ -162,8 +171,8 @@ footer p {
 }
 
 .bg-dark{
-  background-color: rgba(22,22,22,0.71); 
-  height: 6rem;
+  background: linear-gradient(rgba(22,22,22,0), rgba(0,0,0,1) ); 
+  height: 10rem;
   padding-bottom: 1.5rem;
   padding-top:1.5rem;
 }
@@ -281,4 +290,9 @@ border-radius: 0.25rem;
 -webkit-border-radius: 0.25rem;
 border: 1px solid  $color-highlight1;
 cursor: pointer;
+}
+
+
+@media only screen and (max-width : 1024px) {
+
 }

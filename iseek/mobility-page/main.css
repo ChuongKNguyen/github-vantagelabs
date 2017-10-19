@@ -66,12 +66,18 @@ footer p {
  * 
  **************************************************/
 .social-bar {
-  height: 60px;
+  height: 50px;
   background-color: #4D4D4D !important;
-  line-height: 55px; }
+  line-height: 45px; }
 
 .social-media {
   color: #E7E7E7; }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10; }
 
 .navbar {
   height: 80px;
@@ -86,26 +92,30 @@ footer p {
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(./assets/img/background.png) no-repeat fixed;
   background-size: cover; }
 
-.bg-poligon:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%);
-  clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%); }
-.bg-poligon:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(22, 38, 22, 0.43);
-  -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
-  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%); }
+.bg-poligon {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url(./assets/img/background.png) no-repeat fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(./assets/img/background.png) no-repeat fixed;
+  background-size: cover; }
+  .bg-poligon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    -webkit-clip-path: polygon(0 0, 60% 0%, 50% 100%, 0% 100%);
+    clip-path: polygon(0 0, 60% 0%, 50% 100%, 0% 100%); }
+  .bg-poligon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 38, 22, 0.43);
+    -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 50% 100%);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 50% 100%); }
 
 .bg-white {
   background-color: white !important; }
@@ -118,7 +128,7 @@ footer p {
     color: #3c763d; }
 
 .banner {
-  height: 22rem;
+  height: 18rem;
   margin-bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.45)), to(rgba(22, 22, 22, 0))), url(./assets/img/library.png) no-repeat fixed;
   background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0)), url(./assets/img/library.png) no-repeat fixed;
@@ -128,8 +138,9 @@ footer p {
   color: white; }
 
 .bg-dark {
-  background-color: rgba(22, 22, 22, 0.71);
-  height: 6rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0)), to(black));
+  background: linear-gradient(rgba(22, 22, 22, 0), black);
+  height: 10rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem; }
 
