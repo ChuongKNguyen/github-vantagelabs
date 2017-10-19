@@ -86,6 +86,27 @@ footer p {
   background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(./assets/img/background.png) no-repeat fixed;
   background-size: cover; }
 
+.bg-poligon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%);
+  clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%); }
+.bg-poligon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 38, 22, 0.43);
+  -webkit-clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
+  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%); }
+
 .bg-white {
   background-color: white !important; }
 
@@ -94,12 +115,10 @@ footer p {
   .navbar-inverse .navbar-brand:active, .navbar-inverse .navbar-brand:before, .navbar-inverse .navbar-brand:after, .navbar-inverse .navbar-toggler:active, .navbar-inverse .navbar-toggler:before, .navbar-inverse .navbar-toggler:after {
     color: #F79420; }
   .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-toggler:hover {
-    color: red; }
+    color: #3c763d; }
 
 .banner {
-  height: 18rem;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  height: 22rem;
   margin-bottom: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.45)), to(rgba(22, 22, 22, 0))), url(./assets/img/library.png) no-repeat fixed;
   background: linear-gradient(rgba(22, 22, 22, 0.45), rgba(22, 22, 22, 0)), url(./assets/img/library.png) no-repeat fixed;
@@ -160,7 +179,7 @@ h4, h3 {
     content: "";
     display: block;
     width: 50%;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #3c763d;
     padding-bottom: 1rem;
     -webkit-transform: translateY(1px);
             transform: translateY(1px);
