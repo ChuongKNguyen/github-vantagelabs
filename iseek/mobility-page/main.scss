@@ -254,6 +254,13 @@ h4, h3{
   font-size: 1.75rem;
 }
 
+.laptop-img{
+    width: 45rem; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 //FormStack Styles!!!!
 .fsField{
   width: 100%;
@@ -292,7 +299,72 @@ border: 1px solid  $color-highlight1;
 cursor: pointer;
 }
 
+/* MOBILE STYLING */
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .laptop-img {
+      width:80%;
+    }
+}
 
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .laptop-img {
+      width:80%;
+    }
+    .nav-tabs {
+        li{
+          font-size: 1rem;
+        }
+    }
+    img{
+      width: 90%;
+      height: auto !important;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+
+    .container-fluid {
+      padding: 4rem 2rem 4rem 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .laptop-img {
+      width:80%;
+    }
+    .nav-tabs {
+        li{
+          font-size: 0.9rem;
+        }
+    }
+    img{
+      width: 90%;
+      height: auto !important;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+
+    .container-fluid {
+      padding: 4rem 2rem 4rem 2rem !important;
+    }
+    .iconbullet{
+      display: none;
+    }
+    .drift{
+      transform: translateX(-1%);
+    }
 }
