@@ -13,6 +13,7 @@
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./responsive-tabs/responsive-tabs.css" />
   </head>
   <body data-spy="scroll" data-target="#navbar">
     <div id="canvascon">   
@@ -45,7 +46,7 @@
     </div>
   </div>
   <div class="banner">
-    <div class="bg-dark" style="transform: translateY(8rem);">
+    <div class="bg-dark banner-position"">
       <div class="container ">
         <h1 class="jumbotron-heading">Finding <span style="color: #F79420">3.3 Billion Answers</span> Daily <br> <span style="font-weight: 600;">What's Your Question? </h1>
         
@@ -56,7 +57,7 @@
   <div class="album text-muted bg-grey">
     <div style="height: 4.5rem;background-color: #eceeef;position: absolute;width: 100%;">
     </div>
-    <div class="container bg-white" style="padding: 0!important;">
+    <div class="container bg-white tabbable responsive " style="padding: 0!important;">
       <ul class="nav nav-tabs" style="font-size: 1.5rem;">
         <li class="nav-item">
           <a class="nav-link active uppercase" data-toggle="tab" href="#description">Iseek & Canvas</a>
@@ -72,16 +73,13 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane fade-in active" id="description">
             <!-- <div class="alert alert-info">Home</div> -->
-            <div class="col-sm-12" style="display: inline-flex;">
               <div class="col-sm-12">
                 <p> ISEEK®, a cognitive computing infrastructure that consumes and unifies data, content and information (of any media type) in order to develop knowledge for better decision-making. What makes ISEEK® so different from other analytics, CMS, or business intelligence solution alternatives is that it's cognitive. ISEEK® follows the human thought process, intelligently understanding and interpreting both structured and unstructured data. It continuously identifies and connects patterns in data and information in real-time in order to develop new knowledge with the most up-to-date information. </p>
                 <p> ISEEK and Canvas go hand-in-hand working together to by aggregating data from disparate sources, seamlessly, then linking with the Canvas LMS as well as proprietary and public databases. ISEEK and canvass work together to harness the data that normally causes chaos and helps you gain control and continuity with your curriculum. ISEEK® Education Curriculum and Canvas meet the highest Accreditation standards in Education for 20% of schools. </p>
                 
               </div>
-            </div>
           </div>
           <div role="tabpanel" class="tab-pane fade" id="features">
-            <div class="col-sm-12" style="display: inline-flex;">
               <div class="col-sm-12">
                 <p> ISEEK® customizes solutions to meet your needs while leveraging industry leading technologies and expert services. Collaborating with ISEEK® will drive student achievement in your classrooms and will make your life easier.</p>
                 <p> ISEEK® automatically interprets your unstructured data and communicates it back in a structured format providing consistency and organization across your curriculum. You can search for the content of your entire body of curricular resources for a particular topic and even drill down to the slide level to find the piece of content you are looking for.  </p>
@@ -100,10 +98,8 @@
                 <i class="iconbullet fa fa-calendar-check-o" aria-hidden="true"></i><h3 class="drift"> Daily Insight to Your Canvas Implementation</h3>
                 <p>ISEEK® will index daily and will automatically index new and expanded courses and provide “workflow” feedback notification: (does it match the standards/topics and address the skills taught in the course – opportunity to improve)  </p>
               </div>
-            </div>
           </div>
           <div role="tabpanel" class="tab-pane fade" id="tech">
-            <div class="col-sm-12" style="display: inline-flex;">
               <div class="col-sm-12">
                 <p> ISEEK® will unlock the value of the most important data in your school and greatly improve its ROI. We free up the previously unavailable data for new discoveries, new patterns, and picking up problems that would have been missed without integrated inclusion in Canvas. We can increase productivity for all users, eliminate labor, and hopefully increase revenue by helping you focus on what’s important for your school.</p>
                 <p> ISEEK® data and analytics provides for insight into your data which allows for increased data transparency to make instructional decisions, financial decisions and helps you  focus on any aspect of your strategic goals  </p>
@@ -122,7 +118,6 @@
                 <i class="iconbullet fa fa-eye" aria-hidden="true"></i><h3 class="drift"> Data Illumination for complete Canvas visibility</h3>
                 
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -163,13 +158,15 @@
   <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/> -->
+  <script src="./assets/js/jquery.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="./assets/js/vendor/holder.min.js"></script>
+  <script src="./responsive-tabs/jquery.responsive-tabs.min.js"></script>
   <script>
-  $(function () {
-  Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+  $(document).ready(function() {
+      $(".tabbable.responsive").resptabs(); 
   });
   </script>
   <script src="./dist/js/bootstrap.min.js"></script>

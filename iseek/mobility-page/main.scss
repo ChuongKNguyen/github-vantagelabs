@@ -1,4 +1,4 @@
-/* personalized color */
+/* personalized color */ 
 $dark-grey: #4D4D4D ;
 $light-grey: #E7E7E7 ;
 $color-highlight1: #F79420; 
@@ -101,6 +101,7 @@ footer p {
     z-index: 10;
 }   
 
+
 .navbar {
   height: $navbar-height; 
     line-height: 55px;
@@ -164,6 +165,9 @@ footer p {
   margin-bottom: 0;
   background: linear-gradient(rgba(22,22,22,0.45), rgba(22,22,22,0) ), url(./assets/img/library.png) no-repeat fixed ; 
   background-size: cover;
+}
+.banner-position{
+  transform: translateY(8rem);
 }
 
 .jumbotron-heading {
@@ -335,6 +339,13 @@ cursor: pointer;
     .container-fluid {
       padding: 4rem 2rem 4rem 2rem !important;
     }
+    .banner{
+      height: 15rem !important;
+    }
+    .banner-position{
+      transform: translateY(5rem)  !important;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -366,5 +377,34 @@ cursor: pointer;
     }
     .drift{
       transform: translateX(-1%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-fluid {
+      padding: 4rem 1rem 4rem 1rem !important;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem; 
+    }
+    .nav-tabs li {
+        display:block !important;
+        width:100%;
+        margin:0px;
+    }
+    .nav li.active {
+        border-bottom:1px solid #ddd!important;
+        margin: 0px;
+    }
+    .nav-link{
+      padding: .5em 1em !important; 
     }
 }
