@@ -3,3 +3,4 @@ brew install maven
 mvn package -Dmaven.test.skip=true spring-boot:run
 grep -r --color -n "haha" --include \*html
 maven clean install
+grep -rl --color -n --exclude-dir='.git' "fal fa-" --include \*html | xargs sed -i 's/fal fa-/far fa-/g'
